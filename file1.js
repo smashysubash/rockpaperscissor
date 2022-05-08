@@ -38,7 +38,7 @@ function singleRoundPlay(playerSelection,computerSelection)
         
 }
 
-/*function game(){
+function game(){
     player_point=0;
     computer_point=0;
     for(let i=0;i<5;i++){
