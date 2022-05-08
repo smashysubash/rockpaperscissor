@@ -38,6 +38,7 @@ function singleRoundPlay(playerSelection,computerSelection)
         
 }
 
+/*
 function game(){
     player_point=0;
     computer_point=0;
