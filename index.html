@@ -10,9 +10,14 @@
     
 </head>
 <body>
-    <button  onclick="playRound('rock')">Rock</button>
-    <button onclick="playRound('paper')">Paper</button>
-    <button onclick="playRound('scissor')">Scissor</button>
+    <div id="heading">
+        <h1>Rock-Paper-Scissor Game</h1>
+    </div>
+    <div id="buttons">
+    <button  onclick="playRound('rock')"><img class="resize" src="rock.jpg"></button>
+    <button onclick="playRound('paper')"><img class="resize" src="paper.png"></button>
+    <button onclick="playRound('scissor')"><img class="resize" src="scissor.png"></button>
+    </div>
     <div id ="point">
     </div>
     <div id ="result"></div>
