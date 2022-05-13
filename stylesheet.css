@@ -19,4 +19,16 @@ img{
 }
 #heading{
     text-align: center;
+    font-size: 150%;
+}
+
+#point{
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+}
+
+#result{
+    text-align: center;
+    font-size: 300%;
 }

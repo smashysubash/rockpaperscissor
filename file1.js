@@ -34,7 +34,8 @@ function singleRoundPlay(playerSelection,computerSelection)
         computer_point++;
         //return "You Lose! Rock beats Scissor";
     }
-    document.getElementById("point").innerText=`You: ${player_point}Opponent: ${computer_point}`;
+    document.getElementById("result").innerHTML='';
+    document.getElementById("point").innerText=`You: ${player_point}  Opponent: ${computer_point}`;
         
 }
 
@@ -62,10 +63,12 @@ function playRound( playeroption ){
     singleRoundPlay( playeroption, computerPlay());
     if(player_point==5){
         document.getElementById("result").innerHTML="You Won!!!";
+        document.getElementById("result").style.color="green";
         computer_point=0, player_point=0;
     }
     if(computer_point==5){
         document.getElementById("result").innerHTML="You Lose!!!";
+        document.getElementById("result").style.color="red";
         computer_point=0,player_point=0;
     }
 }
