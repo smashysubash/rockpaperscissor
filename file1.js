@@ -35,7 +35,7 @@ function singleRoundPlay(playerSelection,computerSelection)
         //return "You Lose! Rock beats Scissor";
     }
     document.getElementById("result").innerHTML='';
-    document.getElementById("point").innerText=`You: ${player_point}  Opponent: ${computer_point}`;
+    document.getElementById("point").innerText=`You: ${player_point}    Opponent: ${computer_point}`;
         
 }
 
