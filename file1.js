@@ -8,31 +8,31 @@ function computerPlay()
     return play_options[Math.floor(Math.random()*3)];
 }
 
+
 //function to decide the round
 function singleRoundPlay(playerSelection,computerSelection)
 {
     playerSelection = playerSelection.toLowerCase();
     if(playerSelection=="rock" && computerSelection=="paper"){
         computer_point++;
-        //point.innerText=`You: ${player_point}Opponent: ${computer_point}`;
-        //return "You Lose! Paper beats Rock";
+        document.getElementById("subresult").innerText='Paper beats Rock';
     }else if(playerSelection=="rock" && computerSelection=="scissor"){
         player_point++;
-        //return "You Win! Rock beats Scissor";
+        document.getElementById("subresult").innerText='Rock beats Scissor';
     }else if(playerSelection===computerSelection){
-        //return "Its Tie! ";
+        document.getElementById("subresult").innerText='Its Tie! ';
     }else if(playerSelection=="paper" && computerSelection=="scissor"){
         computer_point++;
-        //return "You Lose! Scissor beats Paper";
+        document.getElementById("subresult").innerText=' Scissor beats Paper';
     }else if(playerSelection=="paper" && computerSelection=="rock"){
         player_point++;
-        //return "You Win! Paper beats Rock";
+        document.getElementById("subresult").innerText='Paper beats Rock';
     }else if (playerSelection=="scissor" && computerSelection=="paper"){
         player_point++;
-        //return "You Win! Scissor beats Paper";
+        document.getElementById("subresult").innerText='Scissor beats Pape';
     }else if(playerSelection=="scissor" && computerSelection=="rock"){
         computer_point++;
-        //return "You Lose! Rock beats Scissor";
+        document.getElementById("subresult").innerText=' Rock beats Scissor';
     }
     document.getElementById("result").innerHTML='';
     document.getElementById("point").innerText=`You: ${player_point}    Opponent: ${computer_point}`;
@@ -62,8 +62,9 @@ function game(){
 function playRound( playeroption ){
     singleRoundPlay( playeroption, computerPlay());
     if(player_point==5){
-        document.getElementById("result").innerHTML="You Won!!!";
-        document.getElementById("result").style.color="green";
+        document.getElementById("result").innerHTML="You Won!!! ";
+        document.getElementById("result").style.color="limegreen";
+        
         computer_point=0, player_point=0;
     }
     if(computer_point==5){

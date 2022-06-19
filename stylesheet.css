@@ -1,10 +1,12 @@
 body{
-    background-color: black;
-    color:white;
+    box-sizing: border-box;
+    background-color: #192965;
+    color:#F0EFEF;
 }
 
 button{
-    background-color: midnightblue;
+    background-color: #F0EFEF;
+    border-radius: 10% 5% 10% 5%;
 }
 img{
     width: 100px;
@@ -18,17 +20,38 @@ img{
     align-items: center;
 }
 #heading{
+    background: -webkit-linear-gradient(308deg, transparent 0%, rgba(224,40,24,0.22) 26.772%, rgba(245,14,179,0.86) 26.772%, rgba(216,20,198,0.61) 90.35%, rgba(242,5,190,0.53) 100%),            -webkit-radial-gradient(#d19116 0%, #bf16d2 35.652%, #f44608 100%) 44% 72%/192% 119%;-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 150%;
 }
 
 #point{
+    color: #47E4E0;
     font-size: 300%;
     display: flex;
     justify-content: center;
+}
+#subresult{
+    color: #FBB448;
+    font-size: 250%;
+    margin-bottom: 2%;
+    text-align: center;
 }
 
 #result{
     text-align: center;
     font-size: 300%;
+
+}
+.subhead{
+    margin: 10% 0% 10% 0%;
+    color: #F8F5F1;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+svg{
+    width: 100px;
+    height: 100px;
 }
