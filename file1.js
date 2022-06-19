@@ -63,13 +63,15 @@ function playRound( playeroption ){
     singleRoundPlay( playeroption, computerPlay());
     if(player_point==5){
         document.getElementById("result").innerHTML="You Won!!! ";
-        document.getElementById("result").style.color="limegreen";
-        
+        document.getElementById("result").style.color="green";        
+        document.getElementById("popup-result").style.display="initial";
         computer_point=0, player_point=0;
     }
     if(computer_point==5){
         document.getElementById("result").innerHTML="You Lose!!!";
         document.getElementById("result").style.color="red";
+          
+        document.getElementById("popup-result").style.display="initial";
         computer_point=0,player_point=0;
     }
 }
